@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Card = ({ name, username, id }) => {
 
   const addFav = ()=>{
@@ -10,7 +9,11 @@ const Card = ({ name, username, id }) => {
   return (
     <div className="card">
         {/* En cada card deberan mostrar en name - username y el id */}
-
+          <img src="https://www.freepnglogos.com/uploads/doctor-png/doctor-bulk-billing-doctors-chapel-hill-health-care-medical-3.png" alt="doctor" />
+          <h3>{name}</h3>
+          <p>{username}</p>
+          
+          
         {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
 
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
