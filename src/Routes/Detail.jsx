@@ -15,7 +15,7 @@ const params=useParams()
   
   return (
     <>
-      <h1>Detail Dentist id: {result?.id} </h1>
+      <h1>Detail Dentist {result?.id} </h1>
       <table>
         <tr>
           <th>Nombre</th>
