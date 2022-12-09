@@ -6,19 +6,19 @@ const Card = ({ name, username, id }) => {
   let [fav, setFav] = useState([])
 
   useEffect(() => {
-    let data= localStorage.setItem('favs', JSON.stringify(fav))
+      localStorage.setItem('favs', JSON.stringify(fav))
   }, [fav])
   
   const addFav = ()=>{
     // Aqui iria la logica para agregar la Card en el localStorage
     setFav([...fav, {name, username, id}])
-    console.log(fav);
+    //alert('Odontologo '+ name + ' agreado a favoritos')
   }
 
   return (
     <div className="card">
         {/* En cada card deberan mostrar en name - username y el id */}
-          <img src="https://www.freepnglogos.com/uploads/doctor-png/doctor-bulk-billing-doctors-chapel-hill-health-care-medical-3.png" alt="doctor" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4qkpNju-Z9OiD0UhXn3YGu1GajGP8y_2dw&usqp=CAU" alt="doctor" />
           <Link to = {"/dentist/"+id}>
           <h3>{name}</h3>
           </Link>

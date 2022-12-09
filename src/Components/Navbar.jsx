@@ -8,7 +8,7 @@ const Navbar = () => {
   const{state,dispatch}=useGlobalStates()
 
   return (
-    <nav>
+    <nav className={state.theme}>
       <img src='https://w7.pngwing.com/pngs/117/109/png-transparent-logo-dentistry-graphic-design-design-blue-text-logo.png' alt='logo'/>
       <div>
       {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}
