@@ -6,10 +6,12 @@ import Favs from "./Routes/Favs"
 import Detail from "./Routes/Detail"
 import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar"
+import { useGlobalStates } from "./Components/utils/global.context";
 
 function App() {
+  const{state}=useGlobalStates()
   return (
-      <div className="App">
+      <div className="App" id={state.theme}>
         <Navbar/>
         <Routes>
             <Route path="/" element={<Home/>}/>
