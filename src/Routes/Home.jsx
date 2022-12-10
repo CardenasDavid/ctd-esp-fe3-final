@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Card from '../Components/Card'
 import {useGlobalStates} from '../Components/utils/global.context'
 
+//Entregable realizado por: Hernandez Victoria y Cárdenas David
 const Home = () => {
   const{data}=useGlobalStates()
 

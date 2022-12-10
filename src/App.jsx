@@ -7,6 +7,7 @@ import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar"
 import { useGlobalStates } from "./Components/utils/global.context";
 
+//Entregable realizado por: Hernandez Victoria y Cárdenas David
 function App() {
   const{state}=useGlobalStates()
   return (

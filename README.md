@@ -1,6 +1,7 @@
 # ctd-fe3-final
 
 Examen Final de Frontend III
+Realizado por: Cárdenas David y Hernandez Victoria
 
 ## Indice
 
