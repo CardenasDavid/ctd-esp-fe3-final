@@ -10,7 +10,6 @@ const initialState = {
 
 
 const ContextProvider = ({ children }) => {
-  //Aqui deberan implementar la logica propia del Context, utilizando el hook useMemo
     const [state, dispatch] = useReducer(actionStyle, initialState)
     const[data,setData]=useState([])
     const url= "https://jsonplaceholder.typicode.com/users"

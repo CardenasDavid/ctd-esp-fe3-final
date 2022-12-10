@@ -2,7 +2,6 @@ import React,{ useState } from "react";
 
 
 const Form = () => {
-  //Aqui deberan implementar el form completo con sus validaciones
   let [user,setUser]= useState({
     nombre:"", 
     mail:""
@@ -14,13 +13,10 @@ const Form = () => {
   const handleSubmit=(e)=>{
     e.preventDefault()
     user.nombre.length <= 5 ? setMsg2(true):setMsg(true)
-    if(setMsg){
       console.log(
         '*Nombre:'+user.nombre +
         ' *Mail:' + user.mail
-      )
-    }
-    
+      )    
   }
   return (
     <div>
